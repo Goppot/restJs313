@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="rest@localhost" uuid="e16a73f2-8bfe-492b-9d0a-d76c17a9f8bf">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/rest</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="security_user@localhost" uuid="d15a38e6-64ff-4a10-a9f4-6755c6775795">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/security_user</jdbc-url>
+    </data-source>
+  </component>
+</project>
