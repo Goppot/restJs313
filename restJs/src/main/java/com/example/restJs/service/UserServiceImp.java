@@ -39,7 +39,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     @SuppressWarnings("unchecked")
-    public User getShowId() {
+    public User getAuthorized() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         User user = (User) authentication.getPrincipal();
         return user;

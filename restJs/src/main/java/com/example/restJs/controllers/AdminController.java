@@ -18,7 +18,7 @@ public class AdminController {
 
     @GetMapping("")
     public String admin(Model model){
-        model.addAttribute("user", userService.getShowId());
+        model.addAttribute("user", userService.getAuthorized());
         return "admin";
     }
 

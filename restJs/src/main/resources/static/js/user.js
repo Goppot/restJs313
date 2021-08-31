@@ -1,5 +1,5 @@
 $(document).on("click", ".left-user-btn", function () {
-    const btnAminUser = `<div class="container-fluid div-admin-user">
+    const btnAdminUser = `<div class="container-fluid div-admin-user">
                             <button class="btn btn left-admin-btn" type="button" style="color: #027cff">Admin</button>
                             <button class="btn btn-primary left-user-btn" type="button" >User</button>    
                          </div>`;
@@ -20,14 +20,30 @@ $(document).on("click", ".left-user-btn", function () {
                             <th scope="col">Role</th>
                             </tr>
                         </thead>
-                        <tbody class="table-panel-tbody">
-                            
+                        <tbody class="table-panel-tbody-user">   
                         </tbody>
                         </table>
                       </div>`;
-    document.querySelector(".div-left-body").innerHTML = btnAminUser;
+    document.querySelector(".div-left-body").innerHTML = btnAdminUser;
     document.querySelector(".div-right-body").innerHTML = informationPage + textTable + adminTable;
+    getUser();
 })
+const getUser = () => {
+    fetch("http://localhost:8080/api/users/authorized")
+        .then(res => res.json())
+        .then(user => {
+                let test = `<tr>
+                             <td>${user.id}</td>
+                             <td>${user.name}</td>
+                             <td>${user.age}</td>
+                             <td>${user.email}</td>
+                             <td>${user.nameRole}</td>
+                            </tr>`;
+                document.querySelector(".table-panel-tbody-user").innerHTML = test
+            }
+        )
+}
+
 
 $(document).on("click", ".left-admin-btn", function () {
     allAdminPanel();

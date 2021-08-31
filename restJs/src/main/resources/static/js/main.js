@@ -10,11 +10,6 @@ const sendData = (url, data, method) => {
 
  }
 
-//button close
-$(document).on("click", ".update-close", function () {
-    $(".update").hide();
-})
-
 // Roles
 function getRol(rol){
     if (rol.length === 2) {
@@ -43,6 +38,11 @@ function getRol(rol){
         return roles;
     }
 }
+
+//button close
+$(document).on("click", ".update-close", function () {
+    $(".update").hide();
+})
 
 
 

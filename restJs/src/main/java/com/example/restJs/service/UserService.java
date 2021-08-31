@@ -11,7 +11,7 @@ public interface UserService {
 
     public User getByUSerId(int id);
 
-    User getShowId();
+    User getAuthorized();
 
     public void deleteUser(User user);
 }

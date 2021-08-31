@@ -17,8 +17,8 @@ public class UserController {
     }
 
     @GetMapping("")
-    public String admin(Model model){
-        model.addAttribute("user", userService.getShowId());
+    public String authorized(Model model){
+        model.addAttribute("user", userService.getAuthorized());
         return "user";
     }
 

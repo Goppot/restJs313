@@ -1,13 +1,10 @@
 package com.example.restJs.controllerRest;
 
-import com.example.restJs.model.Role;
 import com.example.restJs.model.User;
 import com.example.restJs.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Collections;
 
 @RestController
 @RequestMapping("/api")
@@ -29,6 +26,11 @@ public class UserRestController {
     @GetMapping("/users/{id}")
     public User getUser(@PathVariable("id") int id){
         return userService.getByUSerId(id);
+    }
+
+    @GetMapping("/users/authorized")
+    public User getAuthorized(){
+        return userService.getAuthorized();
     }
 
     @PostMapping("/users")

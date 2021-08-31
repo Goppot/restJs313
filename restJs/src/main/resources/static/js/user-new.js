@@ -15,6 +15,7 @@ $(document).on("click", ".new-users-nav", function () {
                       <div class="container-fluid all-users">
                         <h3>Add new user</h3>
                       </div>
+                      <div class="container-fluid table-panel">
                       <div class="container new-user-content"
                         style="width: 35%; left: 50%;text-align: center; font-weight: bold;">
                         <div class="form-group new-user-form">
@@ -40,7 +41,8 @@ $(document).on("click", ".new-users-nav", function () {
                         <button type="submit" class="btn btn-success new-user-btn" style="margin: 3%">Add new user</button>
     
                         </div>
-                      </div>`;
+                      </div>
+                        </div>`;
     document.querySelector(".div-right-body").innerHTML = newUser;
 })
 
