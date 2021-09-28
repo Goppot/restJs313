@@ -39,7 +39,7 @@ $(document).on("click", ".editBtn", function (e){
                     <input class="form-control update-password" type="password" name="password" id="password">
 
                     <label for="roles">Enter role: </label>
-                    <select class="form-control" size="2" name="roles" id="roles">
+                    <select class="form-control" multiple="multiple" size="2" name="roles" id="roles">
                         <option selected>USER</option>
                         <option>ADMIN</option>
                     </select>

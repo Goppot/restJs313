@@ -24,7 +24,7 @@ $(document).on("click", ".new-users-nav", function () {
                         <input class="form-control" type="text" name="name" id="newName" value=""/>
     
                         <label for="newAge">Enter age: </label>
-                        <input class="form-control" type="text" name="age" id="newAge" value=""/>
+                        <input class="form-control" type="number" name="age" id="newAge" value=""/>
     
                         <label for="newEmail">Enter email: </label>
                         <input class="form-control" type="text" name="email" id="newEmail" value=""/>
