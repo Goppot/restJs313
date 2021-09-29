@@ -1,4 +1,4 @@
-package com.example.restJs.controllerRest;
+package com.example.restJs.controllers.rest;
 
 import com.example.restJs.model.User;
 import com.example.restJs.service.UserService;
@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-public class UserRestController {
+public class AdminRestController {
 
     private final UserService userService;
 
-    public UserRestController(UserService userService) {
+    public AdminRestController(UserService userService) {
         this.userService = userService;
     }
 
